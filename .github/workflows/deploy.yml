@@ -17,6 +17,7 @@ jobs:
   deploy-via-sftp:
     runs-on: ubuntu-latest
     steps:
-      - run: ls
+      - name: Check out repository code
+        uses: actions/checkout@v2
       - name: send email
-        run: python post_on_PAW.py
+        run: python ./post_on_PAW.py
