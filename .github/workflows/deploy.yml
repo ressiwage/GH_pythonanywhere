@@ -17,5 +17,6 @@ jobs:
   deploy-via-sftp:
     runs-on: ubuntu-latest
     steps:
+      - run: echo ls
       - name: send email
         run: python post_on_PAW.py
