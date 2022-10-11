@@ -18,4 +18,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: send email
-        run: python ./post_on_PAW.py
+        run: python post_on_PAW.py
